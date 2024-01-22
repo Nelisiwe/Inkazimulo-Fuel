@@ -22,6 +22,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
 }
 
 .logo img {
@@ -33,6 +34,7 @@ nav {
     list-style: none;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .nav-links li {
@@ -50,6 +52,9 @@ nav {
 .nav-links a:hover {
     color: #ffc116;
 }
+.nav-links a.active {
+    color: #ffc116; /* Change to the desired active color */
+}
 
 h1 {
     margin: 0;
@@ -58,6 +63,22 @@ h1 {
 section {
     padding: 8em;
     text-align: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.image-container {
+    flex: 1;
+    margin-left: 20px;
 }
 
 h2 {
@@ -72,8 +93,61 @@ p.special-paragraph {
     color: #5c9427;
 }
 
+/* Card styles */
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 20px; 
+}
+
+.card:last-child {
+    margin-right: 0; 
+}
+
+.card-title {
+    color: #333;
+    font-size: 24px;
+}
+
+.card-description {
+    color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-right: 0; 
+    }
+}
+
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap to a new line on smaller screens */
+}
+
+/* Style for the contact information */
+.contact-info {
+    flex-basis: 45%; /* Set the width of the contact information section */
+}
+
+/* Style for the contact form */
+.contact-form {
+    flex-basis: 45%; /* Set the width of the contact form section */
+}
+
+/* Style for the contact form elements */
 form {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
     display: grid;
     grid-gap: 20px;
