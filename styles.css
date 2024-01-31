@@ -105,7 +105,7 @@ nav ul li a.active {
     margin: 0 10px 20px;
     border-radius: 8px;
     flex: 1;
-    max-width: calc(33.3333% - 20px);
+    max-width: calc(33.3333% - 20px); /* Adjust the width as needed */
     position: relative;
 }
 
@@ -149,6 +149,7 @@ nav ul li a.active {
 .contact-info h3 {
     font-size: 30px;
     margin-bottom: 20px;
+    color: #ec7e29;
 }
 
 .contact-info p {
@@ -156,15 +157,14 @@ nav ul li a.active {
     margin-bottom: 10px;
 }
 .contact-info a {
-    color: #ec7e29; 
+    color: #fff; 
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; */
+    transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
-    color: #5a9423;; 
-    text-decoration: underline; 
+    color: #ec7e29;; /
 }
 
 iframe {
@@ -182,21 +182,72 @@ footer {
     padding: 20px;
 }
 
-/* Media queries for responsiveness */
-
 @media screen and (max-width: 768px) {
-    .text-container {
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
     .nav-links {
+        display: none;
+        flex-direction: column;
         text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        background-color: #1d2026;
+        z-index: 1;
     }
+
+    .nav-links.show {
+        display: block;
+    }
+    
 
     .nav-links li {
-        display: block;
         margin: 10px 0;
+    }
+    .background-container {
+        position: unset;
+        width: 100%;
+        
+    }
+    .text-container {
+        max-width: 600px;
+        margin: 0px 5%;
+    }
+    .text-container h2 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #ec7e29;
+    }
+    .text-container h3 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 400;
+    }
+    .text-services h3 {
+        font-size: 30px;
+    }
+    .services-container {
+        padding: 20px 3%;
+    }
+    .card {
+        max-width: calc(100.3333% - 20px);
+    }
+    .card-title {
+        font-size: 22px;
+    }
+    .contact-details {
+        display:unset;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    iframe {
+        width: 90%;
+        height: 250px;
+        margin-left: 5%;
+    }
+    .contact-info h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #ec7e29;
     }
 }

@@ -8,3 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleContainer = document.querySelector('.toggle-container');
+    var navLinks = document.getElementById('navLinks');
+
+    toggleContainer.addEventListener('click', function () {
+        navLinks.classList.toggle('show');
+    });
+});
