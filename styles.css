@@ -22,15 +22,16 @@ nav {
 .logo-container {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo {
-    width: 40px; /* Adjust as needed */
-    margin-right: 10px; /* Adjust as needed */
+    width: 40px;
+    margin-right: 10px;
 }
 
 .company-name {
-    font-size: 18px; /* Adjust as needed */
+    font-size: 18px;
     color: #fff;
 }
 
@@ -53,6 +54,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #5a9423; 
 }
+nav ul li a.active {
+    color: #5a9423;
+}
+
 .background-container {
     position: absolute;
     left: 5%;
@@ -77,12 +82,121 @@ nav ul li a:hover {
     color: #ec7e29;
 }
 .text-container h3 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 400;
+}
+
+.text-services h3 {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: #ec7e29;
+}
+.services-container {
+    padding: 20px 8%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background: #2c2f39;
+    padding: 20px;
+    margin: 0 10px 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: calc(33.3333% - 20px);
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 24px;
+    color: #ec7e29;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #fff;
+}
+
+.services-container p {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact-info {
+    max-width: 400px;
+    text-align: left;
+    padding: 20px;
+}
+
+.contact-info h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.contact-info a {
+    color: #ec7e29; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; */
+}
+
+.contact-info a:hover {
+    color: #5a9423;; 
+    text-decoration: underline; 
+}
+
+iframe {
+    width: 30%;
+    height: 300px;
+    border: 0;
+}
+.nav-links a.active {
+    color: #5a9423;
 }
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .text-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
 }

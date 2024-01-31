@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inkazimulo Marine</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-    <header>
+    <div class="hero">
         <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="NkazimuloFuel-logo.png" alt="Inkazimulo Marine Logo">
-                </a>                
-            </div>
+            <div class="logo-container">
+                <a href="index.html" class="logo-container">
+                    <img src="images/logo.png" class="logo" alt="Inkazimulo Marine Logo">
+                    <p class="company-name">Inkazimulo Marine</p>
+                </a>
             <ul class="nav-links">
                 <li><a id="home-link" href="index.html">Home</a></li>
                 <li><a id="about-link" href="about.html">About Us</a></li>
@@ -21,34 +22,36 @@
                 <li><a id="contact-link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+        <div class="text-services">
+            <h3>Services</h3>
+        </div> 
+        <div class="services-container">
+            <!-- Card for Bunkering -->
+            <div class="card">
+                <img src="images/about-image.jpeg" alt="about-image Image" class="card-image">
+                <h2 class="card-title">Bunkering</h2>
+                <p class="card-description">As a leading provider of bunkering services, we ensure a seamless and efficient process for fueling vessels. Our state-of-the-art facilities and dedicated team guarantee the timely and secure supply of high-quality fuels, meeting the unique demands of our clients.</p>
+            </div>
 
-    <section>
-        <h2>Services</h2>
+            <!-- Card for Cross-Pumping -->
+            <div class="card">
+                <img src="images/cross-pumping.jpeg" alt="cross-pumping Image" class="card-image">
+                <h2 class="card-title">Cross-Pumping</h2>
+                <p class="card-description">Our expertise extends to cross-pumping services, offering a reliable solution for the transfer of various types of fluids between vessels. With advanced equipment and a focus on safety, we facilitate the smooth and controlled transfer of liquids, optimizing operational efficiency for our clients.</p>
+            </div>
 
-        <!-- Card for Bunkering -->
-        <div class="card">
-            <h3 class="card-title">Bunkering</h3>
-            <p class="card-description">As a leading provider of bunkering services, we ensure a seamless and efficient process for fueling vessels. Our state-of-the-art facilities and dedicated team guarantee the timely and secure supply of high-quality fuels, meeting the unique demands of our clients.</p>
+            <!-- Card for Tank Cleaning -->
+            <div class="card">
+                <img src="images/tank-cleaning.jpeg" alt="tank-cleaning Image" class="card-image">
+                <h2 class="card-title">Tank Cleaning</h2>
+                <p class="card-description">Maintaining the integrity of storage and fuel tanks is crucial for the longevity of equipment and the quality of stored substances. Our tank cleaning services adhere to the highest industry standards, ensuring thorough and environmentally responsible cleaning processes.</p><br>
+            </div>
+
+            <p>We are committed to delivering excellence in every aspect of our operations. Whether it's bunkering, cross-pumping, or tank cleaning, our team is dedicated to providing reliable, safe, and cost-effective solutions tailored to the unique needs of our valued clients."</p>
         </div>
-
-        <!-- Card for Cross-Pumping -->
-        <div class="card">
-            <h3 class="card-title">Cross-Pumping</h3>
-            <p class="card-description">Our expertise extends to cross-pumping services, offering a reliable solution for the transfer of various types of fluids between vessels. With advanced equipment and a focus on safety, we facilitate the smooth and controlled transfer of liquids, optimizing operational efficiency for our clients.</p>
-        </div>
-
-        <!-- Card for Tank Cleaning -->
-        <div class="card">
-            <h3 class="card-title">Tank Cleaning</h3>
-            <p class="card-description">Maintaining the integrity of storage and fuel tanks is crucial for the longevity of equipment and the quality of stored substances. Our tank cleaning services adhere to the highest industry standards, ensuring thorough and environmentally responsible cleaning processes.</p>
-        </div>
-
-        <p>We are committed to delivering excellence in every aspect of our operations. Whether it's bunkering, cross-pumping, or tank cleaning, our team is dedicated to providing reliable, safe, and cost-effective solutions tailored to the unique needs of our valued clients."</p>
-    </section>
-
+    </div>
     <footer>
-        <p>&copy; 2024 Inkazimulo Marine. All rights reserved.</p>
+        <p>&copy; 2024 Inkazimulo Fuel. All rights reserved.</p>
     </footer>
     <script src="script.js" defer></script>
 </body>

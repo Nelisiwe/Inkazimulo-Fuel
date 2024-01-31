@@ -1,18 +1,21 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inkazimulo Marine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="hero">
         <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="NkazimuloFuel-logo.png" alt="Inkazimulo Marine Logo">
-                </a> 
+            <div class="logo-container">
+                <a href="index.html" class="logo-container">
+                    <img src="images/logo.png" class="logo" alt="Inkazimulo Marine Logo">
+                    <p class="company-name">Inkazimulo Marine</p>
+                </a>
             </div>
             <ul class="nav-links">
                 <li><a id="home-link" href="index.html">Home</a></li>
@@ -21,36 +24,21 @@
                 <li><a id="contact-link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
-
-    <section>
-        <div class="contact-details">
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p>Contact Number: +27 73 450-8770</p>
-                <p>Location: 23 Petrusa Street, Bellville, Cape Town</p>
+        <section>
+            <div class="contact-details">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.9090161351679!2d18.644636742258438!3d-33.89902561880128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc50f44d765cb7%3A0xf2085190328f5666!2sKayla%20Court%20Complex%2C%2023%20Petrusa%20St%2C%20Belgravia%2C%20Cape%20Town%2C%207530!5e0!3m2!1sen!2sza!4v1705938025484!5m2!1sen!2sza" 
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> Contact Number: <a href="tel:+27734508770">+27 73 450-8770</a></p>
+                    <p><i class="far fa-envelope"></i> Email: <a href="xolani@inkazimulomarine.co.za">xolani@inkazimulomarine.co.za</a></p>
+                    <p><i class="fas fa-globe"></i> Website: <a href="www.inkazimulomarine.co.za">www.inkazimulomarine.co.za</a></p>
+                </div>
             </div>
-            <div class="contact-form">
-                <h2>Contact Form</h2>
-                <form action="submit_form.php" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Inkazimulo Marine. All rights reserved.</p>
