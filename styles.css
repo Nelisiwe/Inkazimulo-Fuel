@@ -62,11 +62,20 @@ nav ul li a.active {
     position: absolute;
     left: 5%;
     width: 40%;
-    margin-top: 8%;
+    margin-top: 10%;
     
 }
 
 .background {
+    width: 100%;
+}
+.background-about-container{
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    margin-top: 4%;
+  }
+.background-about{
     width: 100%;
 }
 
@@ -82,15 +91,14 @@ nav ul li a.active {
     color: #ec7e29;
 }
 .text-container h3 {
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 400;
 }
 
 .text-services h3 {
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 400;
     text-align: center;
-    color: #ec7e29;
 }
 .services-container {
     padding: 20px 8%;
@@ -149,12 +157,13 @@ nav ul li a.active {
 .contact-info h3 {
     font-size: 30px;
     margin-bottom: 20px;
-    color: #ec7e29;
 }
-
 .contact-info p {
     font-size: 18px;
     margin-bottom: 10px;
+}
+.contact-info i {
+    color: #ec7e29; 
 }
 .contact-info a {
     color: #fff; 
@@ -162,11 +171,9 @@ nav ul li a.active {
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
 .contact-info a:hover {
     color: #ec7e29;; /
 }
-
 iframe {
     width: 30%;
     height: 300px;
@@ -181,32 +188,40 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
+@media screen and (max-width: 768px) { 
+    .company-name{
+        font-size: 16px;
+         color: #fff;
+}
+    nav ul {
         position: absolute;
-        top: 60px;
-        background-color: #1d2026;
-        z-index: 1;
+        margin-top: 70px;
+        width: 100%;
+        left: 0;
+        text-align: center;
     }
-
-    .nav-links.show {
-        display: block;
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px;
     }
-    
-
-    .nav-links li {
-        margin: 10px 0;
-    }
+ 
     .background-container {
         position: unset;
-        width: 100%;
-        
+        width: 100%;  
     }
+    .background{
+        width: 90%;
+        margin-left: 5%;
+}
+.background-about-container {
+    position: unset;
+    width: 100%;  
+}
+.background-about{
+    width: 90%;
+    margin-left: 5%;
+}
     .text-container {
         max-width: 600px;
         margin: 0px 5%;
@@ -222,7 +237,8 @@ footer {
         font-weight: 400;
     }
     .text-services h3 {
-        font-size: 30px;
+        font-size: 25px;
+        margin-top: 8%;
     }
     .services-container {
         padding: 20px 3%;
@@ -243,6 +259,87 @@ footer {
         width: 90%;
         height: 250px;
         margin-left: 5%;
+        margin-top: 10%;
+    }
+    .contact-info h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #ec7e29;
+    }
+}
+@media screen and (max-width: 992px) { 
+    .company-name{
+        font-size: 16px;
+         color: #fff;
+}
+    nav ul {
+        position: absolute;
+        margin-top: 70px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px;
+    }
+ 
+    .background-container {
+        position: unset;
+        width: 100%;  
+    }
+    .background{
+        width: 90%;
+        margin-left: 5%;
+}
+.background-about-container {
+    position: unset;
+    width: 100%;  
+}
+.background-about{
+    width: 90%;
+    margin-left: 5%;
+}
+    .text-container {
+        max-width: 600px;
+        margin: 0px 5%;
+    }
+    .text-container h2 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #ec7e29;
+    }
+    .text-container h3 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 400;
+    }
+    .text-services h3 {
+        font-size: 25px;
+        margin-top: 8%;
+    }
+    .services-container {
+        padding: 20px 3%;
+    }
+    .card {
+        max-width: calc(100.3333% - 20px);
+    }
+    .card-title {
+        font-size: 22px;
+    }
+    .contact-details {
+        display:unset;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    iframe {
+        width: 90%;
+        height: 250px;
+        margin-left: 5%;
+        margin-top: 10%;
     }
     .contact-info h3 {
         font-size: 22px;
